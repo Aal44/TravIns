@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TravIns</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1412913189604504</string>
+    <string name="fb_login_protocol_scheme">fb1412913189604504</string>
+    <string name="default_web_client_id">252609394236-780rv191k7fmkbhlp93tjds6helf527u.apps.googleusercontent.com </string>
+</resources>

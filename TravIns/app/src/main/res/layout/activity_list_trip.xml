@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ListTripActivity"
+    android:paddingHorizontal="24dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:paddingStart="0dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inspiration for your trip"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textAlignment="textStart"
+            android:paddingStart="16dp"
+            android:fontFamily="@font/worksans_regular"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtTxtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:drawableTint="@color/black"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_search"
+        android:background="@drawable/bg_white_rounded"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListInspiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

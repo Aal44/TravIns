@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_location"
+                android:text=" Indonesia"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/worksans_regular"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Know where you wanna\ngo?"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/worksans_semibold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start your trips"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_blue_rounded"
+                android:paddingHorizontal="18dp"
+                android:layout_marginVertical="8dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardview_shadow_start_color"
+            />
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Search"-->
+<!--            android:layout_marginHorizontal="24dp"-->
+<!--            android:drawableTint="@color/black"-->
+<!--            android:drawablePadding="8dp"-->
+<!--            android:drawableStart="@drawable/ic_search"-->
+<!--            android:background="@drawable/bg_white_rounded"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspiration for your trip"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/worksans_semibold"/>
+
+            <TextView
+                android:id="@+id/seeAllIns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See all"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:fontFamily="@font/worksans_regular"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInspirationTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free destinations"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/worksans_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See all"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:fontFamily="@font/worksans_regular"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFreeDestinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

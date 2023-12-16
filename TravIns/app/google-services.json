@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "252609394236",
+    "project_id": "tugasakhirpapb-f4d99",
+    "storage_bucket": "tugasakhirpapb-f4d99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252609394236:android:ebbe172b5295a7fa8bf539",
+        "android_client_info": {
+          "package_name": "com.android.travins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252609394236-l70am5sjj6khcmu34o70oh122equd0qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.travins",
+            "certificate_hash": "62a6cf6e4ad06d090d66b5ba9f07a8ad12ef98bd"
+          }
+        },
+        {
+          "client_id": "252609394236-780rv191k7fmkbhlp93tjds6helf527u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv44qaI5lfk_q3WaXZQ09XO56BtSJWia0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252609394236-780rv191k7fmkbhlp93tjds6helf527u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

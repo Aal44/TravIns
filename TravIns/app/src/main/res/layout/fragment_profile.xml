@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:id="@+id/btnNotif"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_notification"
+                app:tint="@color/blueSecondary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/btnNotif"
+                android:text="Profile Menu"
+                android:fontFamily="@font/worksans_semibold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btnLogout"
+                android:textAlignment="center"
+                android:paddingLeft="8dp"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:layout_constraintRight_toLeftOf="@id/btnMore"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/blueSecondary"
+                android:src="@drawable/ic_logout"/>
+
+            <ImageView
+                android:id="@+id/btnMore"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/blueSecondary"
+                android:src="@drawable/ic_more"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"/>
+
+        <TextView
+            android:id="@+id/profileFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:fontFamily="@font/worksans_semibold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location"
+            android:text=" Indonesia"
+            android:fontFamily="@font/worksans_regular"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btnEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit profile information"
+                        android:fontFamily="@font/worksans_regular"
+                        android:drawablePadding="16dp"
+                        android:paddingVertical="4dp"
+                        android:drawableStart="@drawable/ic_profile_info"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="4dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Notifications"
+                            android:fontFamily="@font/worksans_regular"
+                            android:drawablePadding="16dp"
+                            android:drawableStart="@drawable/ic_notification"
+                            android:drawableTint="@color/blueSecondary"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="ON"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:fontFamily="@font/worksans_regular"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:textColor="@color/blueSecondary"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="4dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Language"
+                            android:fontFamily="@font/worksans_regular"
+                            android:drawablePadding="16dp"
+                            android:drawableStart="@drawable/ic_language"
+                            android:drawableTint="@color/blueSecondary"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:fontFamily="@font/worksans_regular"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:textColor="@color/blueSecondary"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Favorite List"
+                        android:fontFamily="@font/worksans_regular"
+                        android:drawablePadding="16dp"
+                        android:paddingVertical="4dp"
+                        android:drawableStart="@drawable/ic_heart_red"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Theme"
+                        android:fontFamily="@font/worksans_regular"
+                        android:drawablePadding="16dp"
+                        android:drawableStart="@drawable/ic_theme"
+                        android:drawableTint="@color/blueSecondary"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help &amp; Support"
+                        android:fontFamily="@font/worksans_regular"
+                        android:drawablePadding="16dp"
+                        android:paddingVertical="4dp"
+                        android:drawableStart="@drawable/ic_help"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy policy"
+                        android:fontFamily="@font/worksans_regular"
+                        android:drawablePadding="16dp"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawableTint="@color/blueSecondary"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

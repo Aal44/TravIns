@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.RegisterActivity"
+    android:gravity="center"
+    android:paddingHorizontal="24dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:fontFamily="@font/worksans_semibold"
+            android:textColor="@color/black"
+            android:textSize="32sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Account"
+            android:fontFamily="@font/worksans_semibold"
+            android:textColor="@color/bluePrimary"
+            android:textSize="32sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:elevation="4dp"
+        android:inputType="text"
+        android:background="@drawable/bg_white_rounded"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:elevation="4dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_white_rounded"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:elevation="4dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@drawable/ic_eye_close"
+        android:drawableTint="@color/bluePrimary"
+        android:background="@drawable/bg_white_rounded"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextCPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:elevation="4dp"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_eye_close"
+        android:drawableTint="@color/bluePrimary"
+        android:background="@drawable/bg_white_rounded"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree with terms &amp; conditions"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_rounded"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginVertical="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:fontFamily="@font/worksans_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegisterGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_yellow_rounded"
+            android:textAllCaps="false"
+            android:text="Google"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_google"
+            android:paddingHorizontal="20dp"
+            android:drawablePadding="8dp"
+            android:layout_marginHorizontal="16sp"
+            android:layout_marginVertical="16sp"
+            />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnRegisterFacebook"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_yellow_rounded"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:text="Facebook"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:drawableStart="@drawable/ic_facebook"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:drawablePadding="8dp"-->
+<!--            android:layout_marginHorizontal="16sp"-->
+<!--            android:layout_marginVertical="16sp"-->
+<!--            />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already registered? Let's "/>
+
+        <TextView
+            android:id="@+id/moveToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/bluePrimary"
+            android:fontFamily="@font/worksans_bold"/>
+    </LinearLayout>
+
+</LinearLayout>
